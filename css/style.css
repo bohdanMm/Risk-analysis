@@ -1,0 +1,15 @@
+﻿table {
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  #identRisk1 {  
+    width: 400px;
+ }
+
+ #identRisk2, #identRisk3{
+     width: 100px;
+ }
