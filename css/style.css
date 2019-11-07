@@ -2,7 +2,7 @@
     border-collapse: collapse;
   }
   
-  table, th, td {
+  th, td {
     border: 1px solid black;
   }
 
@@ -10,6 +10,18 @@
     width: 400px;
  }
 
- #identRisk2, #identRisk3{
-     width: 100px;
+ .identRisk2, .identRisk3{
+     width: 80px;
+ }
+
+ .main{
+    border: 2px solid black;
+ }
+ 
+ .toHide{
+   border: 0px ;
+ }
+
+ div{
+   padding: 10px;
  }
