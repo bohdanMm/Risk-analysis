@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<input lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,92 +8,921 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/script.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous">
+        </script>
 </head>
+
 <body>
     <div id="choosePage">
         <select id="pageSelector">
             <option>Ідентифікація ризиків розробки ПЗ</option>
-            <option>Лист2</option>
-            <option>Лист3</option>
+            <option>Аналіз ризиків розроблення ПЗ</option>
+            <option>Планування ризиків розроблення ПЗ</option>
         </select>
     </div>
-    <div id="sourceOfRisks">
-        <table id="sourceOfRisksTable">
-            <tr class="main"><td class="identRisk1">Множина джерел появи технічних ризиків</td><td class="identRisk2"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">функціональні характеристики ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">характеристики якості ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">характеристики надійності ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">застосовність ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">часова продуктивність ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">супроводжуваність ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">повторне використання компонент ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr class="main"><td>Множина джерел появи вартісних ризиків</td><td class="identRisk2"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">обмеження сумарного бюджету на програмний проект</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недоступна вартість реалізації програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">низька ступінь реалізму при оцінюванні витрат на програмний проект</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr class="main"><td class="identRisk1">Множина джерел появи планових ризиків</td><td class="identRisk2"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">  та можливості гнучкості внесення змін до планів життєвого циклу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1"> можливості порушення встановлених термінів реалізації етапів життєвого циклу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1"> низька ступінь реалізму при встановленні планів і етапів життєвого циклу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr class="main"><td class="identRisk1">Множина джерел появи ризиків реалізації процесу управління програмним проектом</td><td class="identRisk2"><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">хибна стратегія реалізації програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">неефективне планування проекту розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">неякісне оцінювання програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">прогалини в документуванні етапів реалізації програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">промахи в прогнозуванні результатів реалізації програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="toHide"></td><td><input type="text" class="rowAmount"></td><td class="procents"></td></tr>
-        </table>
+    <div id="firstStage">
+        <div id="sourceOfRisks">
+            <label for="sourceOfRisksTable">Визначення можливих джерел появи ризиків</label>
+            <table id="sourceOfRisksTable">
+                <tr class="main">
+                    <td class="identRisk1">Множина джерел появи технічних ризиків</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">функціональні характеристики ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">характеристики якості ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">характеристики надійності ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">застосовність ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">часова продуктивність ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">супроводжуваність ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">повторне використання компонент ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td>Множина джерел появи вартісних ризиків</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">обмеження сумарного бюджету на програмний проект</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недоступна вартість реалізації програмного проекту</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">низька ступінь реалізму при оцінюванні витрат на програмний проект</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td class="identRisk1">Множина джерел появи планових ризиків</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1"> та можливості гнучкості внесення змін до планів життєвого циклу розроблення
+                        ПЗ
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1"> можливості порушення встановлених термінів реалізації етапів життєвого циклу
+                        розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1"> низька ступінь реалізму при встановленні планів і етапів життєвого циклу
+                        розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td class="identRisk1">Множина джерел появи ризиків реалізації процесу управління програмним
+                        проектом
+                    </td>
+                    <td class="identRisk2">
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">хибна стратегія реалізації програмного проекту</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">неефективне планування проекту розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">неякісне оцінювання програмного проекту</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">прогалини в документуванні етапів реалізації програмного проекту</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">промахи в прогнозуванні результатів реалізації програмного проекту</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="toHide"></td>
+                    <td><input type="text" class="rowAmount"></td>
+                    <td class="procents"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="identificationRisk">
+            <label for="identificationRiskTable">Ідентифікація потенційних ризикових подій</label>
+            <table id="identificationRiskTable">
+                <tr class="main">
+                    <td class="identRisk1">Множина настання технічних ризикових подій</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">затримки у постачанні обладнання, необхідного для підтримки процесу
+                        розроблення
+                        ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">затримки у постачанні інструментальних засобів, необхідних для підтримки
+                        процесу
+                        розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">небажання команди виконавців використовувати інструментальні засоби для
+                        підтримки
+                        процесу розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">формування запитів на більш потужні інструментальні засоби розроблення ПЗ
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">відмова команди виконавців від CASE-засобів розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">неефективність програмного коду, згенерованого CASE-засобами розроблення ПЗ
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">неможливість інтеграції CASE-засобів з іншими інструментальними засобами для
+                        підтримки процесу розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатня продуктивність баз(и) даних для підтримки процесу розроблення ПЗ
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">програмні компоненти, які використовують повторно в ПЗ, мають дефекти та
+                        обмежені
+                        функціональні можливості</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">швидкість виявлення дефектів у програмному коді є нижчою від раніше
+                        запланованих
+                        термінів</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">поява дефектних системних компонент, які використовують для розроблення ПЗ
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td>Множина настання вартісних ризикових подій</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недо(пере)оцінювання витрат на реалізацію програмного проекту (надмірно
+                        низька
+                        вартість)</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">фінансові ускладнення у компанії-замовника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">фінансові ускладнення у компанії-розробника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">змен(збіль)шення бюджету програмного проекта з ініціативи компанії-замовника
+                        ПЗ
+                        під час його реалізаці</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">висока вартість виконання повторних робіт, необхідних для зміни вимог до ПЗ
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">реорганізація структурних підрозділів у компанії-замовника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">реорганізація команди виконавців у компанії-розробника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td class="identRisk1">Множина настання планових ризикових подій</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">зміни графіка виконання робіт з боку замовника чи розробника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">порушення графіка виконання робіт з боку компанії-розробника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">потреба зміни користувацьких вимог до ПЗ з боку компанії-замовника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">потреба зміни функціональних вимог до ПЗ з боку компанії-розробника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">потреба виконання великої кількості повторних робіт, необхідних для зміни
+                        вимог
+                        до ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недо(пере)оцінювання тривалості етапів реалізації програмного проекту з боку
+                        компанії-замовника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">остаточний розмір ПЗ значно перевищує (менший від) заплановані(их) його
+                        характеристики</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">поява на ринку аналогічного ПЗ до виходу замовленого</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">поява на ринку більш конкурентоздатного ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td class="identRisk1">Множина настання ризикових подій реалізації процесу управління програмним
+                        проектом</td>
+                    <td class="identRisk2">
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">низький моральний стан персоналу команди виконавців ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">низька взаємодія між членами команди виконавців ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">пасивність керівника (менеджера) програмного проекту</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатня компетентність керівника (менеджера) програмного проекту</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">незадоволеність замовника результатами етапів реалізації програмного проекту
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатня кількість фахівців у команді виконавців ПЗ з необхідним
+                        професійним
+                        рівнем</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">хвороба провідного виконавця в найкритичніший момент розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">одночасна хвороба декількох виконавців підчас розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">неможливість організації необхідного навчання персоналу команди виконавців ПЗ
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">зміна пріоритетів у процесі управління програмним проектом</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недо(пере)оцінювання необхідної кількості розробників (підрядників і
+                        субпідрядників) на етапах життєвого циклу розроблення ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатнє (надмірне) документування результатів на етапах реалізації
+                        програмного
+                        проекту;</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">нереалістичне прогнозування результатів на етапах реалізації програмного
+                        проекту
+                    </td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатній професійний рівень представників від компанії-замовника ПЗ</td>
+                    <td class="identRisk2"><input type="text" class="needWork" value="1"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="toHide"></td>
+                    <td><input type="text" class="rowAmount"></td>
+                    <td class="procents"></td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <div id="identificationRisk">
-        <table id="identificationRiskTable">
-            <tr class="main"><td class="identRisk1">Множина настання технічних ризикових подій</td><td class="identRisk2"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">затримки у постачанні обладнання, необхідного для підтримки процесу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">затримки у постачанні інструментальних засобів, необхідних для підтримки процесу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">небажання команди виконавців використовувати інструментальні засоби для підтримки процесу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">формування запитів на більш потужні інструментальні засоби розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">відмова команди виконавців від CASE-засобів розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">неефективність програмного коду, згенерованого CASE-засобами розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">неможливість інтеграції CASE-засобів з іншими інструментальними засобами для підтримки процесу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недостатня продуктивність баз(и) даних для підтримки процесу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">програмні компоненти, які використовують повторно в ПЗ, мають дефекти та обмежені функціональні можливості</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">швидкість виявлення дефектів у програмному коді є нижчою від раніше запланованих термінів</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">поява дефектних системних компонент, які використовують для розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr class="main"><td>Множина настання вартісних ризикових подій</td><td class="identRisk2"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недо(пере)оцінювання витрат на реалізацію програмного проекту (надмірно низька вартість)</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">фінансові ускладнення у компанії-замовника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">фінансові ускладнення у компанії-розробника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">змен(збіль)шення бюджету програмного проекта з ініціативи компанії-замовника ПЗ під час його реалізаці</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">висока вартість виконання повторних робіт, необхідних для зміни вимог до ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">реорганізація структурних підрозділів у компанії-замовника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">реорганізація команди виконавців у компанії-розробника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr class="main"><td class="identRisk1">Множина настання планових ризикових подій</td><td class="identRisk2"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">зміни графіка виконання робіт з боку замовника чи розробника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">порушення графіка виконання робіт з боку компанії-розробника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">потреба зміни користувацьких вимог до ПЗ з боку компанії-замовника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">потреба зміни функціональних вимог до ПЗ з боку компанії-розробника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">потреба виконання великої кількості повторних робіт, необхідних для зміни вимог до ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недо(пере)оцінювання тривалості етапів реалізації програмного проекту з боку компанії-замовника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">остаточний розмір ПЗ значно перевищує (менший від) заплановані(их) його характеристики</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">поява на ринку аналогічного ПЗ до виходу замовленого</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">поява на ринку більш конкурентоздатного ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr class="main"><td class="identRisk1">Множина настання ризикових подій реалізації процесу управління програмним проектом</td><td class="identRisk2"><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">низький моральний стан персоналу команди виконавців ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">низька взаємодія між членами команди виконавців ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">пасивність керівника (менеджера) програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недостатня компетентність керівника (менеджера) програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">незадоволеність замовника результатами етапів реалізації програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недостатня кількість фахівців у команді виконавців ПЗ з необхідним професійним рівнем</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">хвороба провідного виконавця в найкритичніший момент розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">одночасна хвороба декількох виконавців підчас розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">неможливість організації необхідного навчання персоналу команди виконавців ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">зміна пріоритетів у процесі управління програмним проектом</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недо(пере)оцінювання необхідної кількості розробників (підрядників і субпідрядників) на етапах життєвого циклу розроблення ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недостатнє (надмірне) документування результатів на етапах реалізації програмного проекту;</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">нереалістичне прогнозування результатів на етапах реалізації програмного проекту</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="identRisk1">недостатній професійний рівень представників від компанії-замовника ПЗ</td><td class="identRisk2"><input type="text" class="needWork" value="1"></td><td class="identRisk3"></td></tr>
-            <tr><td class="toHide"></td><td><input type="text" class="rowAmount"></td><td class="procents"></td></tr>
+    <div id="secondStage">
+        <div>
+            <label for="expertsTable">Коефіцієнти вагомості кожного з експертів для ймовірності настання ризикових
+                подій</label>
+            <table id="expertsTable">
+                <tr class="header">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="probabilityes">
+                    <td>Множина настання технічних ризикових подій</td>
+                    <td id="technRiskAmount">11</td>
+                </tr>
+                <tr class="probabilityes">
+                    <td>Множина настання вартісних ризикових подій</td>
+                    <td class="costRiskAmount">7</td>
+                </tr>
+                <tr class="probabilityes">
+                    <td>Множина настання планових ризикових подій</td>
+                    <td class="shaduleRiskAmount">9</td>
+                </tr>
+                <tr class="probabilityes">
+                    <td>Множина настання ризикових подій реалізації процесу управління програмним проектом</td>
+                    <td class="peopleRiskAmount">14</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <label for="probabilityOfEvent">Визначення ймовірності настання ризикових подій</label>
+            <table id="probabilityOfEvent">
+            </table>
+        </div>
+        <div>
+            <label for="expertsCostsTable">Коефіцієнти вагомості кожного з експертів для можливих збитків від
+                ризику</label>
+            <table id="expertsCostsTable">
+                <tr class="header">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="probabilityes">
+                    <td>Множина настання технічних ризикових подій</td>
+                    <td id="technRiskAmount">11</td>
+                </tr>
+                <tr class="probabilityes">
+                    <td>Множина настання вартісних ризикових подій</td>
+                    <td class="costRiskAmount">7</td>
+                </tr>
+                <tr class="probabilityes">
+                    <td>Множина настання планових ризикових подій</td>
+                    <td class="shaduleRiskAmount">9</td>
+                </tr>
+                <tr class="probabilityes">
+                    <td>Множина настання ризикових подій реалізації процесу управління програмним проектом</td>
+                    <td class="peopleRiskAmount">14</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <label for="costs">Кошторис</label>
+            <table id="costs">
+            </table>
+        </div>
+        <div>
+            <label for="moneyProbability">Визначення частки можливих збитків від прояву ризику</label>
+            <table id="moneyProbability"></table>
+        </div>
+    </div>
+    <div id="thirdStage">
+        <label for="fix">Заходи із зменшення або усунення ризику</label>
+        <table id="fix">
+            <tr>
+                <td></td>
+                <td>Назва заходів</td>
+                <td>Пом'якшення</td>
+                <td>Прийняття</td>
+                <td>Ухилення</td>
+                <td>Передача</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>попереднє навчання членів проектного колективу;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>узгодження детального переліку вимог до ПЗ із замовником;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>внесення узгодженого переліку вимог до ПЗ замовника в договір;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>точне слідування вимогам замовника з узгодженого переліку вимог до ПЗ;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>попередні дослідження ринку;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>експертна оцінка програмного проекту досвідченим стороннім консультантом;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>консультації досвідченого стороннього консультанта;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>тренінг з вивчення необхідних інструментів розроблення ПЗ;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>укладання договору страхування;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>використання "шаблонних" рішень з вдалих попередніх проектів при управлінні програмним проектом;
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>підготовка документів, які показують важливість даного проекту для досягнення фінансових цілей
+                    компанії-розробника;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>реорганізація роботи проектного колективу так, щоб обов'язки та робота членів колективу
+                    перекривали
+                    один одного;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>придбання (замовлення) частини компонент розроблюваного ПЗ;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>заміна потенційно дефектних компонент розроблюваного ПЗ придбаними компонентами, які гарантують
+                    якість виконання роботи;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>придбання більш продуктивної бази даних;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>використання генератора програмного коду;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>реорганізація роботи проектного колективу залежно від рівня труднощів виконання завдань та
+                    професійних рівнів розробників;</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>повторне використання придатних компонент ПЗ, які були розроблені для інших програмних проектів;
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>аналіз доцільності розроблення даного ПЗ.</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
         </table>
+        <div id="finalRisk">
+            <table id="finalTable">
+                <tr class="main">
+                    <td class="identRisk1">Множина настання технічних ризикових подій</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">затримки у постачанні обладнання, необхідного для підтримки процесу
+                        розроблення
+                        ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">затримки у постачанні інструментальних засобів, необхідних для підтримки
+                        процесу
+                        розроблення ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">небажання команди виконавців використовувати інструментальні засоби для
+                        підтримки
+                        процесу розроблення ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">формування запитів на більш потужні інструментальні засоби розроблення ПЗ
+                    </td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">відмова команди виконавців від CASE-засобів розроблення ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">неефективність програмного коду, згенерованого CASE-засобами розроблення ПЗ
+                    </td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">неможливість інтеграції CASE-засобів з іншими інструментальними засобами для
+                        підтримки процесу розроблення ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатня продуктивність баз(и) даних для підтримки процесу розроблення ПЗ
+                    </td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">програмні компоненти, які використовують повторно в ПЗ, мають дефекти та
+                        обмежені
+                        функціональні можливості</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">швидкість виявлення дефектів у програмному коді є нижчою від раніше
+                        запланованих
+                        термінів</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">поява дефектних системних компонент, які використовують для розроблення ПЗ
+                    </td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td>Множина настання вартісних ризикових подій</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недо(пере)оцінювання витрат на реалізацію програмного проекту (надмірно
+                        низька
+                        вартість)</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">фінансові ускладнення у компанії-замовника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">фінансові ускладнення у компанії-розробника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">змен(збіль)шення бюджету програмного проекта з ініціативи компанії-замовника
+                        ПЗ
+                        під час його реалізаці</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">висока вартість виконання повторних робіт, необхідних для зміни вимог до ПЗ
+                    </td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">реорганізація структурних підрозділів у компанії-замовника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">реорганізація команди виконавців у компанії-розробника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td class="identRisk1">Множина настання планових ризикових подій</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">зміни графіка виконання робіт з боку замовника чи розробника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">порушення графіка виконання робіт з боку компанії-розробника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">потреба зміни користувацьких вимог до ПЗ з боку компанії-замовника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">потреба зміни функціональних вимог до ПЗ з боку компанії-розробника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">потреба виконання великої кількості повторних робіт, необхідних для зміни
+                        вимог
+                        до ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недо(пере)оцінювання тривалості етапів реалізації програмного проекту з боку
+                        компанії-замовника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">остаточний розмір ПЗ значно перевищує (менший від) заплановані(их) його
+                        характеристики</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">поява на ринку аналогічного ПЗ до виходу замовленого</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">поява на ринку більш конкурентоздатного ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr class="main">
+                    <td class="identRisk1">Множина настання ризикових подій реалізації процесу управління програмним
+                        проектом</td>
+                    <td class="identRisk2">
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">низький моральний стан персоналу команди виконавців ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">низька взаємодія між членами команди виконавців ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">пасивність керівника (менеджера) програмного проекту</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатня компетентність керівника (менеджера) програмного проекту</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">незадоволеність замовника результатами етапів реалізації програмного проекту
+                    </td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатня кількість фахівців у команді виконавців ПЗ з необхідним
+                        професійним
+                        рівнем</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">хвороба провідного виконавця в найкритичніший момент розроблення ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">одночасна хвороба декількох виконавців підчас розроблення ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">неможливість організації необхідного навчання персоналу команди виконавців ПЗ
+                    </td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">зміна пріоритетів у процесі управління програмним проектом</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недо(пере)оцінювання необхідної кількості розробників (підрядників і
+                        субпідрядників) на етапах життєвого циклу розроблення ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатнє (надмірне) документування результатів на етапах реалізації
+                        програмного
+                        проекту;</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">нереалістичне прогнозування результатів на етапах реалізації програмного
+                        проекту
+                    </td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+                <tr>
+                    <td class="identRisk1">недостатній професійний рівень представників від компанії-замовника ПЗ</td>
+                    <td class="identRisk2"></td>
+                    <td class="identRisk3"></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
-</html>
+
+</input>
